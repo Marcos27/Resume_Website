@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: #fff
+}
 body{
   background-color: #222;
 }
@@ -61,13 +65,13 @@ body{
     display: inline-block;
 }
 #down-arrow {
-
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png");
+    margin: 70px;
+    width: 8%;
+    height: 60px;
+    background-image: url(http://uploads.webflow.com/5511a670a15865006809e812/5511e382163a318b6bacf4a6_Arrow%20Down.png);
+    /* background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png"); */
     background-size: cover;
-  }
+}
 .spinner-logo{
 
   width: 200px;
@@ -75,8 +79,16 @@ body{
   display: inline-block;
   margin-top: 10%;
 }
-.logo-GA:hover {
-  -webkit-animation: spin 0.50s infinite linear;
+.wdi-pic {
+    background: url(http://www.wdi.pw/img/logo_wdi.png);
+    width: 48%;
+    display: inline-block;
+    height: 293px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.spinner-logo:hover {
+  -webkit-animation: spin 0.8798s infinite linear;
 }
 @-webkit-keyframes spin {
   0% {
@@ -94,14 +106,15 @@ body{
   background-size: 200px;
 }
 
-.footer-img{
-  display: inline-block;
-  background-image: url(http://jessicabogart.com/wp-content/uploads/General_Assembly_logo.png);
-
-  width: 200px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-size: 100%;
+.footer-img {
+    display: inline-block;
+    position: absolute;
+    background-image: url(http://jessicabogart.com/wp-content/uploads/General_Assembly_logo.png);
+    width: 300px;
+    left: 40%;
+    height: 103px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 video {
     top: 0;
@@ -110,10 +123,60 @@ video {
     right: 0;
    z-index: -1;
     width: 100%;
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
     background-size: cover;
     position: absolute;
 }
+.media-logo-holder {
+    width: 38%;
+    position: absolute;
+    left: 69%;
+}
+.contact {
+    text-shadow: 0 2px 2px white;
+    letter-spacing: 8px;
+    margin: 50px;
+    font-size: 25px;
+    color: #fff;
+}
+.phone-num, .email{
+  text-shadow: 0 2px 2px white;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #E0E0E0;
+}
+.logo-github{
+  width: 13%;
+  height: 63px;
 
+  display: inline-block;
+  background-image: url(http://www.iconsdb.com/icons/preview/gray/github-10-xxl.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-gram{
+  width: 13%;
+  height: 63px;
 
+  display: inline-block;
+  background-image: url(http://www.flawlesstan.net/instagram-4-512.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-facebook{
+  width: 13%;
+  height: 63px;
 
+  display: inline-block;
+  background-image: url(http://www.villasorio.com/wp-content/uploads/2014/11/facebook-white.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-linkin{
+  width: 13%;
+  height: 63px;
+
+  display: inline-block;
+  background-image: url(http://features.advisorwebsites.com/sites/default/files/users/AdvisorWebsitesFeatures/icones/1384148754_linkedin_circle_gray.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}*/
