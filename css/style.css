@@ -179,4 +179,13 @@ video {
   background-image: url(http://features.advisorwebsites.com/sites/default/files/users/AdvisorWebsitesFeatures/icones/1384148754_linkedin_circle_gray.png);
   background-size: 100%;
   background-repeat: no-repeat;
-}*/
+}
+.parallax-bio{
+  background: url('http://www.intrawallpaper.com/static/images/HD-Wallpapers-C76.jpg') no-repeat fixed 18%;
+
+}
+.inner-bio {
+    width: 100%;
+    height: 800px;
+
+}
