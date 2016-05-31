@@ -1,18 +1,60 @@
-.top, .mid, .last{
-  border: 2px solid black;
-  width: 100%;
-  height: 30%;
-  position: relative;
-
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff
 }
 body{
   background-color: #222;
 }
+.space{
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  margin: 200px;
+}
+.space1{
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 0 5px 5px black;
 
+}
+.space-mid{
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+.parallax-inner{
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
 .top{
-  background-color: grey;
+  width: 100%;
+  height: 650px;
+}
+.parallax2{
+
+  background: url('https://lh6.ggpht.com/o8Dh6BGbwdjEuH2saOnJN-nDTqnU4LXsPaL1uv6fqxWi6G5b6H8Pcs6dHaUBZkCMn9zX=h900') no-repeat fixed 100%;
+
 }
 
+.bio-holder {
+    width: 70%;
+    height: 460px;
+    /* overflow: scroll; */
+    padding: 10px;
+    border-radius: 35px;
+    background-color: rgba(0,0,0,0.8);
+}
 #nav-bar {
     position: absolute;
     top: 0px;
@@ -25,24 +67,44 @@ body{
 .nav-btn {
     margin: 2px;
     color: black;
+    text-shadow: 0 2px 2px black;
     width: 20%;
     height: 100%;
     display: inline-block;
 }
 #down-arrow {
-
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
-    background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png");
+    margin: 70px;
+    width: 8%;
+    height: 60px;
+    background-image: url(http://uploads.webflow.com/5511a670a15865006809e812/5511e382163a318b6bacf4a6_Arrow%20Down.png);
+    /* background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-128.png"); */
     background-size: cover;
-  }
+}
 .spinner-logo{
 
   width: 200px;
   height: 200px;
   display: inline-block;
-
+  margin-top: 10%;
+}
+.wdi-pic {
+    background: url(http://www.wdi.pw/img/logo_wdi.png);
+    width: 48%;
+    display: block;
+    height: 293px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.spinner-logo:hover {
+  -webkit-animation: spin 0.8798s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 .logo-GA{
   background-image: url(http://challenges.s3.amazonaws.com/mta-app-quest/GA_logo.png);
@@ -51,17 +113,16 @@ body{
   background-repeat: no-repeat;
   background-size: 200px;
 }
-.last{
-  background-color: black;
-}
-.footer-img{
-  display: inline-block;
-  background-image: url(http://jessicabogart.com/wp-content/uploads/General_Assembly_logo.png);
 
-  width: 200px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-size: 100%;
+.footer-img {
+    display: inline-block;
+    position: absolute;
+    background-image: url(http://jessicabogart.com/wp-content/uploads/General_Assembly_logo.png);
+    width: 300px;
+    left: 40%;
+    height: 103px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 video {
     top: 0;
@@ -70,138 +131,123 @@ video {
     right: 0;
    z-index: -1;
     width: 100%;
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
     background-size: cover;
     position: absolute;
 }
-.background{
-  width: 100%;
-  height: 100%;
-  border: 2px solid red;
-  z-index: -1px;
+.media-logo-holder {
+    width: 38%;
+    position: absolute;
+    left: 69%;
+}
+.contact {
+    text-shadow: 0 2px 2px white;
+    letter-spacing: 8px;
+    margin: 50px;
+    font-size: 25px;
+    color: #fff;
+}
+.phone-num, .email{
+  text-shadow: 0 2px 2px white;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #E0E0E0;
+}
+.logo-github{
+  width: 13%;
+  height: 63px;
+
+  display: inline-block;
+  background-image: url(http://www.iconsdb.com/icons/preview/gray/github-10-xxl.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-gram{
+  width: 13%;
+  height: 63px;
+
+  display: inline-block;
+  background-image: url(http://www.flawlesstan.net/instagram-4-512.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-facebook{
+  width: 13%;
+  height: 63px;
+
+  display: inline-block;
+  background-image: url(http://www.villasorio.com/wp-content/uploads/2014/11/facebook-white.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-linkin{
+  width: 13%;
+  height: 63px;
+
+  display: inline-block;
+  background-image: url(http://features.advisorwebsites.com/sites/default/files/users/AdvisorWebsitesFeatures/icones/1384148754_linkedin_circle_gray.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.parallax-bio{
+  background: url('https://www.starwarshq.com/uploads/monthly_2015_12/FZ5IW0C.jpg.87ba6bc04dbd8a7818367615cd287469.jpg') no-repeat fixed 100%;
+  background-size: cover;
 
 }
+.inner-bio {
+    width: 100%;
+    height: 800px;
+        padding-top: 15%;
 
-
-
-
-
-@import url(http://fonts.googleapis.com/css?family=Nunito);
-
-html {
-  height: 100%;
-  overflow: hidden;
+}
+.profile-pic {
+    margin: -51px;
+    width: 200px;
+    float: left;
+    height: 200px;
+    border: 13px solid rgba(0,0,0,0.5);
+    border-radius: 100%;
+    position: relative;
+    top: -50px;
+    left: -50px;
+    background-position-x: -28px;
+    background-position-y: -9px;
+    background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgxAAAAJDZiYzNiODJjLTMxNGEtNDMwYS1hNGQyLWQ1ZWU2MWYwZTI3ZA.jpg);
+}
+.bio-bio {
+    font-size: 30px;
+    color: wheat;
+    text-shadow: 0 1px 17px wheat;
+}
+.project {
+    width: 32%;
+    height: 350px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    margin: 5px;
 }
 
-body {
-  margin:0;
-  padding:0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: Nunito;
+.project:hover {
+    width: 32%;
+    height: 350px;
+/*    box-shadow: 0px 0px 30px 3px #EADF2C;
+*/    display: inline-block;
+    background-color: rgba(234, 223, 44, 0.7);
+    border-radius: 5px;
+    margin: 5px;
 }
 
-h1 {
-   font-size: 250%
+.project-picture {
+    width: 95%;
+    height: 246px;
+    margin-top: 5px;
 }
-
-p {
-  font-size: 140%;
-  line-height: 150%;
-  color: #333;
-}
-
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-  transform-style: inherit;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-}
-
-.title {
-  width: 50%;
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
-}
-
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-}
-
-#title {
-  background-image: url("");
-   background-attachment: fixed;
-}
-
-#slide1:before {
-  background-image: url("http://lorempixel.com/640/480/abstract/4/");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-}
-
-#slide2 {
-  background-image: url("http://lorempixel.com/640/480/abstract/3/");
-  background-attachment: fixed;
-}
-
-#slide3:before {
-  background-image: url("http://lorempixel.com/640/480/abstract/5/");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-}
-
-#slide4 {
-  background: #222;
-
+.project-name {
+    width: 95%;
+    height: 70px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 1px 1px;
+    font-family: serif;
 }
