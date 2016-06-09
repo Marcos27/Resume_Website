@@ -45,7 +45,6 @@ body{
 
   background: url('https://lh6.ggpht.com/o8Dh6BGbwdjEuH2saOnJN-nDTqnU4LXsPaL1uv6fqxWi6G5b6H8Pcs6dHaUBZkCMn9zX=h900') no-repeat fixed 100%;
    background-size: cover;
-     margin: -32px;
 }
 
 .bio-holder {
@@ -136,9 +135,9 @@ video {
     position: absolute;
 }
 .media-logo-holder {
-    width: 38%;
+    width: 265px;
     position: absolute;
-    left: 69%;
+    margin-left: 30px;
 }
 .contact {
     text-shadow: 0 2px 2px white;
